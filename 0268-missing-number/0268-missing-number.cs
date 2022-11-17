@@ -1,27 +1,16 @@
 public class Solution {
     public int MissingNumber(int[] nums) {
         
-        
-        Hashtable ht = new Hashtable();
-        
+        int sum1=0;
+        int sum2=0;
         
         for(int i=0;i<nums.Length;i++){
-
-        
-            ht.Add(nums[i],"s");
             
-        
-        }
-        
-        
-        for(int i=0;i<nums.Length+1;i++){
+            sum1=sum1+nums[i];
+            sum2=sum2+i;
             
-            if(!ht.ContainsKey(i)){
-                
-                return i;
-            }
         }
-        
-        return -1;
+        sum2=sum2+nums.Length;
+        return sum2-sum1;
     }
 }
