@@ -17,7 +17,7 @@ public class Solution {
            x=x/10;
            temp=number;
            number = (number*10)+digit;
-           if(number/10!=temp){
+           if(number/10!=temp){ // this here checks if the number is overflowed. if number overflows, there will be a random junk number, and if we divide it by 10 againm we wont get the previous number.
                return 0;
            }
            
