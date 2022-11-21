@@ -18,16 +18,16 @@ public class Solution : VersionControl {
                 
             }
             else{
-                break;
+                r=mid;
                 
             }
             
             mid=l+(r-l)/2;
         }
         
-        while(IsBadVersion(mid)){
-            mid--;
-        }
+       if(l==r){
+           return mid;
+       }
         
         
         
