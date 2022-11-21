@@ -19,16 +19,14 @@ public class Solution {
                 r=mid-1;
             }
             else{
-                break;
+                return mid;
             }
             mid = l+(r-l)/2;
         }
         
         
-        if(nums[mid]==target){
-            return mid;
-        }
-        else if(nums[mid]<target){
+        
+        if(nums[mid]<target){
             return mid+1;
         }
         else{
