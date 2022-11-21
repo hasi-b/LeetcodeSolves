@@ -32,12 +32,7 @@ public class Solution {
             return mid+1;
         }
         else{
-            if(mid==0){
-                return 0;
-            }
-            else{
-                return mid;
-            }
+            return mid;
         }
     }
 }
