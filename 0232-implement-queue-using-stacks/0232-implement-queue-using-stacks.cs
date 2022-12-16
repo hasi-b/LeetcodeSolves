@@ -26,22 +26,12 @@ public class MyQueue {
     }
     
     public int Pop() {
-        if(stackFirst.Count!=0){
-            return stackFirst.Pop();
-        }
-        else{
-             return stackFirst.Pop();
-        }
+        return stackFirst.Pop();
         
     }
     
     public int Peek() {
-        if(stackFirst.Count!=0){
-            return stackFirst.Peek();
-        }
-        else{
-             return stackFirst.Peek();
-        }
+       return stackFirst.Peek();
         
     }
     
