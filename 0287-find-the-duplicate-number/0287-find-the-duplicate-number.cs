@@ -1,21 +1,31 @@
 public class Solution {
     public int FindDuplicate(int[] nums) {
-        Array.Sort(nums);
+        int slow =0;
+        int fast =0;
+        int start =0;
         
-        
-        for(int i=0;i+1<nums.Length;i++){
+        while(1==1){
             
+            slow = nums[slow];
+            fast= nums[fast];
+            fast = nums[fast];
             
-            if(nums[i]==nums[i+1]){
-                return nums[i];
+            if(slow == fast){
+                
+                break;
             }
-            
             
         }
         
-        return 1;
         
-        
+        while(start!=slow){
+            
+            
+            start=nums[start];
+            slow = nums[slow];
+            
+        }
+        return slow;
         
     }
 }
